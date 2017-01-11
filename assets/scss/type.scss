@@ -1,0 +1,39 @@
+// type =========
+
+a{
+  color: inherit;
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: 'e';
+  src: url('../fonts/e.woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+//placeholder style
+::-webkit-input-placeholder {
+   color: black;
+}
+
+:-moz-placeholder {
+   color: black;
+}
+
+::-moz-placeholder {
+   color: black;
+}
+
+:-ms-input-placeholder {
+   color: black;
+}
+
+// highlight colour
+
+// ::selection {
+//   background: blue; /* WebKit/Blink Browsers */
+// }
+// ::-moz-selection {
+//   background: blue; /* Gecko Browsers */
+// }
