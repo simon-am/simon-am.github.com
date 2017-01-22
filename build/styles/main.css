@@ -98,11 +98,10 @@ a {
 body, html {
   width: 100%;
   height: 100%;
-  background-color: black;
+  background-color: #1a1a1a;
   color: white;
   font-family: 'e';
-  overflow: hidden;
-  perspective: 500px; }
+  overflow: hidden; }
 
 section {
   width: 100%;
@@ -161,22 +160,22 @@ header {
 
 .me {
   text-align: center;
-  position: fixed;
+  position: absolute;
   top: 0;
   bottom: 0;
   margin: auto;
-  height: 16vw;
+  height: 50px;
   width: 100%;
   pointer-events: none; }
   .me h1 {
     font-weight: normal;
-    font-size: 16vw;
-    line-height: 16vw;
+    font-size: 50px;
+    line-height: 50px;
     -webkit-font-smoothing: antialiased;
-    color: black; }
+    color: white; }
 
 .me-wrap {
-  background: white;
+  background: #1a1a1a;
   position: absolute;
   left: 0;
   top: 0;
@@ -185,15 +184,7 @@ header {
   overflow: hidden;
   z-index: 3; }
   .me-wrap.zoom {
-    transition: height 2s cubic-bezier(0.19, 1, 0.22, 1), opacity 1s 2s ease;
-    height: 0;
-    opacity: 0; }
-    .me-wrap.zoom .me {
-      transform: translateY(-50%);
-      transition: transform 2s cubic-bezier(0.19, 1, 0.22, 1), opacity 1s ease; }
-      .me-wrap.zoom .me h1 {
-        transition: opacity .5s .1s ease;
-        opacity: 0; }
+    display: none; }
 
 .heyyy {
   position: absolute;
@@ -208,8 +199,11 @@ header {
   font-size: 30px;
   line-height: 37px;
   -webkit-font-smoothing: antialiased;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  transform-style: preserve-3d;
   opacity: 0;
-  transform: translateY(50%); }
+  transition: opacity 1s ease; }
   @media only screen and (max-width: 1024px) {
     .heyyy {
       height: auto;
@@ -217,8 +211,6 @@ header {
       padding: 20px;
       padding-top: 100px; } }
   .heyyy.here-I-am {
-    transition: transform 2s cubic-bezier(0.19, 1, 0.22, 1), opacity 0s ease;
-    transform: translateY(0%);
     opacity: 1; }
   .heyyy a {
     position: relative;
@@ -291,3 +283,12 @@ header {
 .img-bg__col.view {
   display: block;
   opacity: 0.8; }
+
+.angle {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  perspective: 500px; }
