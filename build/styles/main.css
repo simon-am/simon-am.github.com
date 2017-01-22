@@ -198,6 +198,10 @@ header {
   width: 100%;
   font-size: 30px;
   line-height: 37px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   -webkit-font-smoothing: antialiased;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
@@ -231,6 +235,7 @@ header {
   bottom: -60px;
   width: 190px;
   left: 0;
+  pointer-events: none;
   transform: rotate(-3deg); }
   @media only screen and (max-width: 1024px) {
     .xoxo {

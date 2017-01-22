@@ -44,6 +44,7 @@
 	width: 100%;
 	font-size: 30px;
 	line-height: 37px;
+	user-select: none;
 	-webkit-font-smoothing: antialiased;
 	backface-visibility: hidden;
 	transform-style: preserve-3d;
@@ -83,6 +84,7 @@
 	bottom: -60px;
 	width: 190px;
 	left: 0;
+	pointer-events: none;
 	transform: rotate(-3deg);
 	@media #{$tabletl} {
 		left: 20px;
