@@ -180,8 +180,7 @@ header {
 
 .heyyy {
   position: absolute;
-  top: 40px;
-  left: 40px;
+  padding: 40px;
   max-width: 648px;
   height: 147px;
   width: 100%;
@@ -212,6 +211,9 @@ header {
       left: 0; }
     .heyyy a:hover::after {
       background: white; }
+  @media only screen and (max-width: 768px) {
+    .heyyy {
+      padding: 30px; } }
 
 .xoxo {
   bottom: -60px;
