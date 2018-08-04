@@ -1,5 +1,5 @@
 <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
-<script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.0/aframe/build/aframe-ar.js"></script>
+<script src="./aframe-ar.js"></script>
 <body style='margin : 0px; overflow: hidden;'>
    
   <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false;'>
@@ -10,13 +10,13 @@
     <a-entity obj-model="obj: #tree-obj" position='-1 0.5 0' scale="0.05 0.05 0.05" rotation="-90 0 0">
     </a-entity>
 
-    <a-marker-camera type='pattern' patterUrl='https://raw.githubusercontent.com/jeromeetienne/AR.js/master/three.js/examples/marker-training/examples/pattern-files/pattern-arjs.patt'>
+    <!-- <a-marker-camera type='pattern' patterUrl='https://raw.githubusercontent.com/jeromeetienne/AR.js/master/three.js/examples/marker-training/examples/pattern-files/pattern-arjs.patt'>
     
-    </a-marker-camera>
+    </a-marker-camera> -->
     <!-- new -->
 
 
-     <!-- <a-marker-camera preset='hiro'></a-marker-camera> -->
+     <a-marker-camera preset='hiro'></a-marker-camera>
 
   </a-scene>
   <div style="position:fixed; bottom: 20px; left: 20px">
