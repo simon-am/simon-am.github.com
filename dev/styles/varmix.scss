@@ -6,15 +6,6 @@ $black: #000000;
 //whites
 $white: #ffffff;
 
-//things
-$text: #eaeaea;
-
-
-//width ======
-
-$max-width: 1440px;
-
-
 // mobile
 
 $phone: "only screen and (max-width: 400px)";
@@ -31,50 +22,6 @@ $desktop: "only screen and (max-width: 1640px)";
 	
 }
 */
-
-// things
-
-.absolute-center{
-	position: absolute;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	top: 0;
-	margin: auto;
-}
-
-.absolute-h-center{
-	position: absolute;
-	left: 0;
-	right: 0;
-	margin: auto;
-}
-
-.absolute-v-center{
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	margin: auto;
-}
-
-.no-display{
-	display: none;
-}
-
-
-// stupid chrome being stupid
-
-.lag-fix{
-	-webkit-transform: translateZ(0);
-	-moz-transform: translateZ(0);
-	-ms-transform: translateZ(0);
-	-o-transform: translateZ(0);
-	transform: translateZ(0);
-	-webkit-backface-visibility: hidden;
-	-moz-backface-visibility: hidden;
-	-ms-backface-visibility: hidden;
-	backface-visibility: hidden;
-}
 
 
 @keyframes fade-ani {
