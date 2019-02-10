@@ -102,5 +102,7 @@ gulp.task('watch', ['clean', 'sass', 'copy', 'libs'], function() {
     gulp.watch(env.dev+'/scripts/**/*.js', ['copy-watch', 'libs-watch']);
 });
 
+
+gulp.task('default', ['clean',  'sass', 'copy', 'libs', 'watch']);
 gulp.task('serve', ['clean',  'sass', 'copy', 'libs', 'watch']);
 gulp.task('build', ['clean',  'sass', 'copy', 'libs', 'minify-css', 'compress']);
