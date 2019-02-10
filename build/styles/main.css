@@ -79,6 +79,27 @@ img, object, embed {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden; }
 
+@keyframes fade-ani {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+.fade-in {
+  animation-name: fade-ani;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-iteration-count: once;
+  animation-fill-mode: backwards; }
+
+.fade-in-1 {
+  animation-name: fade-ani;
+  animation-duration: 1s;
+  animation-delay: 2s;
+  animation-timing-function: ease;
+  animation-iteration-count: once;
+  animation-fill-mode: backwards; }
+
 @font-face {
   font-family: 'a';
   src: url("../fonts/a.woff2") format("woff2"), url("../fonts/a.woff") format("woff");
@@ -148,7 +169,8 @@ body, html {
 .heyyy {
   position: relative;
   padding: 80px 40px;
-  height: 100vh; }
+  height: 100vh;
+  animation-delay: 1s; }
   @media only screen and (max-width: 1024px) {
     .heyyy {
       padding: 80px 10px; } }

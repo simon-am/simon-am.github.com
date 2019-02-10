@@ -77,10 +77,26 @@ $desktop: "only screen and (max-width: 1640px)";
 }
 
 
-// bloody calc not working 
+@keyframes fade-ani {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
 
-@mixin calc($property, $expression) { 
-  #{$property}: calc(#{$expression}); 
-} 
+.fade-in {
+  animation-name: fade-ani;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-iteration-count: once;
+  animation-fill-mode: backwards;
+}
+
+.fade-in-1 {
+  animation-name: fade-ani;
+	animation-duration: 1s;
+	animation-delay: 2s;
+  animation-timing-function: ease;
+  animation-iteration-count: once;
+  animation-fill-mode: backwards;
+}
 
 
