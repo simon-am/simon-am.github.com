@@ -51,6 +51,7 @@
 	top: 0;
 	left: 0;
 	overflow: hidden;
+	
 }
 
 .video {
@@ -59,6 +60,6 @@
   height: 100%;
 	transform: translateX(-50%);
 	@media #{$tabletp} {
-		transform: scale(0.8);
+		transform: translateX(-55%) translateY(-6%) scale(0.6);
 	}
 }
