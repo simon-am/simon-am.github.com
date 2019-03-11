@@ -13,6 +13,10 @@ $(document).ready(function () {
     $('.img-bg' + '.' + bgType).toggleClass('view');
   });
  */
+  $(".try").click(function(){
+    console.log('try');
+    $.getScript("./scripts/camera2.js");
+  }); 
 });
 
 
