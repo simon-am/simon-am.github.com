@@ -65,7 +65,14 @@
 }
 
 .dg {
-/* 	display: none !important; */
+	display: none !important;
+}
+
+canvas {
+	position: absolute;
+	left: 50%;
+	height: 100%;
+	transform: translateX(-50%);
 }
 
 #main {
