@@ -15,6 +15,8 @@ $(document).ready(function () {
  */
   $(".try").click(function(){
     console.log('try');
+    $('.video-wrap').addClass('fade-out');
+    $('.loading').addClass('do-load');
     $.getScript("./build/scripts/camera2.js");
   }); 
 });
