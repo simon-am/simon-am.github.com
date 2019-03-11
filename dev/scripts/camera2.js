@@ -38830,11 +38830,10 @@ function setupGui(cameras, net) {
 /**
  * Sets up a frames per second panel on the top-left of the window
  */
-//DELETE
-/* function setupFPS() {
+function setupFPS() {
   stats.showPanel(0); // 0: fps, 1: ms, 2: mb, 3+: custom
   document.body.appendChild(stats.dom);
-} */
+}
 
 /**
  * Feeds an image to posenet to estimate poses - this is where the magic
@@ -38947,6 +38946,7 @@ async function bindPage() {
   }
 
   setupGui([], net);
+  setupFPS();
   detectPoseInRealTime(video, net);
 }
 
