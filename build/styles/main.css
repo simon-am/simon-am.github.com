@@ -197,7 +197,7 @@ body, html {
       transform: translateX(-55%) translateY(-6%) scale(0.6); } }
 
 .dg {
-  display: none !important; }
+  /* 	display: none !important; */ }
 
 #main {
   position: absolute;
@@ -206,4 +206,7 @@ body, html {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  background: black; }
+  background: black;
+  bottom: 0;
+  right: 0;
+  margin: auto; }

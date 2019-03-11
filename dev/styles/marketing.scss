@@ -65,7 +65,7 @@
 }
 
 .dg {
-	display: none !important;
+/* 	display: none !important; */
 }
 
 #main {
@@ -76,4 +76,8 @@
 	height: 100%;
 	overflow: hidden;
 	background: black;
+
+	bottom: 0;
+	right: 0;
+	margin: auto;
 }
