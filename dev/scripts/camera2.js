@@ -38743,7 +38743,7 @@ const guiState = {
     nmsRadius: 30.0
   },
   output: {
-    showVideo: false,
+    showVideo: true,
     showSkeleton: true,
     showPoints: true,
     showBoundingBox: false
