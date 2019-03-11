@@ -38754,7 +38754,7 @@ const guiState = {
 /**
  * Sets up dat.gui controller on the top-right of the window
  */
-/* function setupGui(cameras, net) {
+function setupGui(cameras, net) {
   guiState.net = net;
 
   if (cameras.length > 0) {
@@ -38825,7 +38825,7 @@ const guiState = {
         break;
     }
   });
-} */
+}
 
 /**
  * Sets up a frames per second panel on the top-left of the window
