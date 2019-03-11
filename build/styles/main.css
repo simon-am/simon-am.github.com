@@ -236,12 +236,15 @@ canvas {
   background: #04df03;
   opacity: 0; }
   .loading.do-load {
-    animation-name: loadingani;
-    animation-duration: 2s;
-    animation-timing-function: ease;
-    animation-iteration-count: 4;
-    animation-fill-mode: backwards; }
+    /* animation-name: loadingani;
+		animation-duration: 0.8s;
+		animation-timing-function: ease;
+		animation-iteration-count: 6;
+		animation-fill-mode: backwards; */ }
 
 .try {
   text-decoration: underline;
   cursor: pointer; }
+  .try.tried {
+    cursor: initial;
+    text-decoration: line-through; }

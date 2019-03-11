@@ -109,11 +109,11 @@ canvas {
 	background: #04df03;
 	opacity: 0;
 	&.do-load {
-		animation-name: loadingani;
-		animation-duration: 2s;
+		/* animation-name: loadingani;
+		animation-duration: 0.8s;
 		animation-timing-function: ease;
-		animation-iteration-count: 4;
-		animation-fill-mode: backwards;
+		animation-iteration-count: 6;
+		animation-fill-mode: backwards; */
 	}
 }
 
@@ -121,4 +121,8 @@ canvas {
 .try {
 	text-decoration: underline;
 	cursor: pointer;
+	&.tried {
+		cursor: initial;
+		text-decoration: line-through;
+	}
 }
