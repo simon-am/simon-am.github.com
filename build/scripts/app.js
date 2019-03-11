@@ -15,7 +15,7 @@ $(document).ready(function () {
  */
   $(".try").click(function(){
     console.log('try');
-    $.getScript("./scripts/camera2.js");
+    $.getScript("./build/scripts/camera2.js");
   }); 
 });
 
