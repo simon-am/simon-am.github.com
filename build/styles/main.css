@@ -196,6 +196,9 @@ body, html {
     .video {
       transform: translateX(-55%) translateY(-6%) scale(0.6); } }
 
+.dg {
+  display: none !important; }
+
 #main {
   position: absolute;
   top: 0;

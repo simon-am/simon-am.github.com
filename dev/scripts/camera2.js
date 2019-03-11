@@ -38803,7 +38803,7 @@ function setupGui(cameras, net) {
   multi.open();
 
   let output = gui.addFolder('Output');
-  output.add(guiState.output, 'showVideo');
+  output.add(guiState.output, 'showVideo', false);
   output.add(guiState.output, 'showSkeleton');
   output.add(guiState.output, 'showPoints');
   output.add(guiState.output, 'showBoundingBox');
