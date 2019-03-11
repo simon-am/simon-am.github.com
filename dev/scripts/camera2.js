@@ -38947,7 +38947,6 @@ async function bindPage() {
   }
 
   setupGui([], net);
-  setupFPS();
   detectPoseInRealTime(video, net);
 }
 
