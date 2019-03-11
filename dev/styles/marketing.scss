@@ -129,6 +129,30 @@ canvas {
 	}
 }
 
+@keyframes loadingani3 {
+  0%   	{ opacity: 0; }
+	3% 	{ opacity: 1; }
+	97% 	{ opacity: 1; }
+	100%  { opacity: 0; }
+}
+
+.loader {
+	position: relative;
+	width: 14px;
+	display: inline-block;
+	left: 4px;
+	top: 2px;
+	opacity: 0;
+	&.do-load {
+		animation-name: loadingani3;
+		animation-duration: 4s;
+		animation-delay: 1.5s;
+		animation-timing-function: ease;
+		animation-iteration-count: 1;
+		animation-fill-mode: backwards; 
+	}
+}
+
 
 .try {
 	text-decoration: underline;
